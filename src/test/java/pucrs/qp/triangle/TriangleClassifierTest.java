@@ -24,4 +24,16 @@ public class TriangleClassifierTest {
 		
 		assertEquals(TriangleAngleType.OBTUSE, classification.getAngleType());
     }
+
+	@Test
+	public void testEscaleno2() {
+		
+		double side1 = 5d;
+		double side2 = 2d;
+		double side3 = 6d;
+		
+		TriangleClassification classification = TriangleClassifier.classify(side1, side2, side3);
+		
+		assertEquals(TriangleAngleType.OBTUSE, classification.getAngleType());
+	}
 }

@@ -1,0 +1,837 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 15c219aa-4d13-4024-ae5d-91e2fbbe1e61@1.worker-com-oss-794dcff96c-9s58c.gce-production-3
+version: v6.2.17 https://github.com/travis-ci/worker/tree/bc420764f334fe0d096a417c80426f672f1b7d18
+instance: travis-job-9ff69c7f-1d3e-4a8e-aaa6-bd83c5922be1 travis-ci-sardonyx-xenial-1593004276-4d46c6b3 (via amqp)
+startup: 6.042417418s
+travis_fold:end:worker_info[0Ktravis_time:start:17de5a73[0Ktravis_time:end:17de5a73:start=1601828738890009253,finish=1601828739048019108,duration=158009855,event=no_world_writable_dirs[0Ktravis_time:start:0d77980d[0Ktravis_time:end:0d77980d:start=1601828739051414537,finish=1601828739059536556,duration=8122019,event=agent[0Ktravis_time:start:00a5431e[0Ktravis_time:end:00a5431e:start=1601828739062636104,finish=1601828739064877456,duration=2241352,event=check_unsupported[0Ktravis_time:start:1b8c4479[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: java
+Build dist: xenial
+Build id: 188048828
+Job id: 394835038
+Runtime kernel version: 4.15.0-1077-gcp
+travis-build version: 68cdc09f
+[34m[1mBuild image provisioning date and time[0m
+Wed Jun 24 13:36:52 UTC 2020
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+[34m[1mgit version[0m
+git version 2.27.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.42.1 linux-x64 node-v12.16.2
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2019-11-12 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.13 (Ubuntu 10.13-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Mar 18 2020 14:06:17)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.35.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.1.2-30-gc879cb0
+[34m[1mrvm version[0m
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.19
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.26
+9.5.22
+9.6.18
+[34m[1mRedis version[0m
+redis-server 6.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.6 compiled on July 20 2018
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.21.0
+v11.0.0
+v12.18.1
+v4.9.1
+v6.17.1
+v8.12.0
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:1b8c4479:start=1601828739067835370,finish=1601828739074597824,duration=6762454,event=show_system_info[0Ktravis_time:start:117cc3c0[0Ktravis_time:end:117cc3c0:start=1601828739077641419,finish=1601828739090375326,duration=12733907,event=rm_riak_source[0Ktravis_time:start:043de02e[0Ktravis_time:end:043de02e:start=1601828739093622994,finish=1601828739098840972,duration=5217978,event=fix_rwky_redis[0Ktravis_time:start:00496a90[0Ktravis_time:end:00496a90:start=1601828739102064510,finish=1601828739487225719,duration=385161209,event=wait_for_network[0Ktravis_time:start:19cbaa16[0Ktravis_time:end:19cbaa16:start=1601828739490508832,finish=1601828739713726781,duration=223217949,event=update_apt_keys[0Ktravis_time:start:2ba9a7d8[0Ktravis_time:end:2ba9a7d8:start=1601828739716816976,finish=1601828739768830187,duration=52013211,event=fix_hhvm_source[0Ktravis_time:start:0d18a1c0[0Ktravis_time:end:0d18a1c0:start=1601828739772027246,finish=1601828739774724992,duration=2697746,event=update_mongo_arch[0Ktravis_time:start:23929128[0Ktravis_time:end:23929128:start=1601828739777751112,finish=1601828739817615431,duration=39864319,event=fix_sudo_enabled_trusty[0Ktravis_time:start:04ced1e8[0Ktravis_time:end:04ced1e8:start=1601828739820859816,finish=1601828739823155312,duration=2295496,event=update_glibc[0Ktravis_time:start:24843eb4[0Ktravis_time:end:24843eb4:start=1601828739826039386,finish=1601828739833367400,duration=7328014,event=clean_up_path[0Ktravis_time:start:00e437e3[0Ktravis_time:end:00e437e3:start=1601828739836255920,finish=1601828739843983844,duration=7727924,event=fix_resolv_conf[0Ktravis_time:start:12beb658[0Ktravis_time:end:12beb658:start=1601828739846831515,finish=1601828739855565066,duration=8733551,event=fix_etc_hosts[0Ktravis_time:start:01cc3da0[0Ktravis_time:end:01cc3da0:start=1601828739858483848,finish=1601828739870192174,duration=11708326,event=fix_mvn_settings_xml[0Ktravis_time:start:07fc3371[0Ktravis_time:end:07fc3371:start=1601828739873185638,finish=1601828739882681831,duration=9496193,event=no_ipv6_localhost[0Ktravis_time:start:2cda2f58[0Ktravis_time:end:2cda2f58:start=1601828739885815668,finish=1601828739888119433,duration=2303765,event=fix_etc_mavenrc[0Ktravis_time:start:0a0daece[0Ktravis_time:end:0a0daece:start=1601828739891118009,finish=1601828739894065276,duration=2947267,event=fix_wwdr_certificate[0Ktravis_time:start:2e3383b6[0Ktravis_time:end:2e3383b6:start=1601828739896859957,finish=1601828739921348635,duration=24488678,event=put_localhost_first[0Ktravis_time:start:062b3002[0Ktravis_time:end:062b3002:start=1601828739924373906,finish=1601828739927608746,duration=3234840,event=home_paths[0Ktravis_time:start:22fe9870[0Ktravis_time:end:22fe9870:start=1601828739930546291,finish=1601828739942830069,duration=12283778,event=disable_initramfs[0Ktravis_time:start:1d09d753[0Ktravis_time:end:1d09d753:start=1601828739945909580,finish=1601828740314998295,duration=369088715,event=disable_ssh_roaming[0Ktravis_time:start:06f85bfa[0Ktravis_time:end:06f85bfa:start=1601828740318242624,finish=1601828740320610270,duration=2367646,event=debug_tools[0Ktravis_time:start:036fb2aa[0Ktravis_time:end:036fb2aa:start=1601828740323550218,finish=1601828740326683595,duration=3133377,event=uninstall_oclint[0Ktravis_time:start:154cd0dc[0Ktravis_time:end:154cd0dc:start=1601828740329588493,finish=1601828740332477955,duration=2889462,event=rvm_use[0Ktravis_time:start:03bbe580[0Ktravis_time:end:03bbe580:start=1601828740335448928,finish=1601828740343155175,duration=7706247,event=rm_etc_boto_cfg[0Ktravis_time:start:0d3b11c8[0Ktravis_time:end:0d3b11c8:start=1601828740346439256,finish=1601828740349836721,duration=3397465,event=rm_oraclejdk8_symlink[0Ktravis_time:start:06744ba0[0Ktravis_time:end:06744ba0:start=1601828740352805342,finish=1601828740454104445,duration=101299103,event=enable_i386[0Ktravis_time:start:0481510c[0Ktravis_time:end:0481510c:start=1601828740457400797,finish=1601828740463371828,duration=5971031,event=update_rubygems[0Ktravis_time:start:000c5f36[0Ktravis_time:end:000c5f36:start=1601828740466540545,finish=1601828741271043131,duration=804502586,event=ensure_path_components[0Ktravis_time:start:070b1dfc[0Ktravis_time:end:070b1dfc:start=1601828741274349113,finish=1601828741276623745,duration=2274632,event=redefine_curl[0Ktravis_time:start:01b7754d[0Ktravis_time:end:01b7754d:start=1601828741279491217,finish=1601828741281708891,duration=2217674,event=nonblock_pipe[0Ktravis_time:start:170126fa[0Ktravis_time:end:170126fa:start=1601828741284578876,finish=1601828747318768940,duration=6034190064,event=apt_get_update[0Ktravis_time:start:0e4a0db2[0Ktravis_time:end:0e4a0db2:start=1601828747322457785,finish=1601828747324804159,duration=2346374,event=deprecate_xcode_64[0Ktravis_time:start:1b68b814[0Ktravis_time:end:1b68b814:start=1601828747327778006,finish=1601828750110318567,duration=2782540561,event=update_heroku[0Ktravis_time:start:151be0fe[0Ktravis_time:end:151be0fe:start=1601828750113595095,finish=1601828750115877549,duration=2282454,event=shell_session_update[0Ktravis_time:start:2dba8270[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:2dba8270:start=1601828750118841048,finish=1601828752641357987,duration=2522516939,event=set_docker_mtu[0Ktravis_time:start:20114250[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:20114250:start=1601828752644746973,finish=1601828752707521014,duration=62774041,event=resolvconf[0Ktravis_time:start:0450ff7b[0Ktravis_time:end:0450ff7b:start=1601828752720298023,finish=1601828752860099052,duration=139801029,event=maven_central_mirror[0Ktravis_time:start:061b6bd0[0Ktravis_time:end:061b6bd0:start=1601828752863372931,finish=1601828752954591637,duration=91218706,event=maven_https[0Ktravis_time:start:1313f460[0Ktravis_time:end:1313f460:start=1601828752958216675,finish=1601828752960459538,duration=2242863,event=fix_ps4[0Ktravis_time:start:027d5b36[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:25e83474[0K$ git clone --depth=50 --branch=master https://github.com/egindri/triangle-classifier.git egindri/triangle-classifier
+Cloning into 'egindri/triangle-classifier'...
+remote: Enumerating objects: 64, done.[K
+remote: Counting objects:   1% (1/64)[Kremote: Counting objects:   3% (2/64)[Kremote: Counting objects:   4% (3/64)[Kremote: Counting objects:   6% (4/64)[Kremote: Counting objects:   7% (5/64)[Kremote: Counting objects:   9% (6/64)[Kremote: Counting objects:  10% (7/64)[Kremote: Counting objects:  12% (8/64)[Kremote: Counting objects:  14% (9/64)[Kremote: Counting objects:  15% (10/64)[Kremote: Counting objects:  17% (11/64)[Kremote: Counting objects:  18% (12/64)[Kremote: Counting objects:  20% (13/64)[Kremote: Counting objects:  21% (14/64)[Kremote: Counting objects:  23% (15/64)[Kremote: Counting objects:  25% (16/64)[Kremote: Counting objects:  26% (17/64)[Kremote: Counting objects:  28% (18/64)[Kremote: Counting objects:  29% (19/64)[Kremote: Counting objects:  31% (20/64)[Kremote: Counting objects:  32% (21/64)[Kremote: Counting objects:  34% (22/64)[Kremote: Counting objects:  35% (23/64)[Kremote: Counting objects:  37% (24/64)[Kremote: Counting objects:  39% (25/64)[Kremote: Counting objects:  40% (26/64)[Kremote: Counting objects:  42% (27/64)[Kremote: Counting objects:  43% (28/64)[Kremote: Counting objects:  45% (29/64)[Kremote: Counting objects:  46% (30/64)[Kremote: Counting objects:  48% (31/64)[Kremote: Counting objects:  50% (32/64)[Kremote: Counting objects:  51% (33/64)[Kremote: Counting objects:  53% (34/64)[Kremote: Counting objects:  54% (35/64)[Kremote: Counting objects:  56% (36/64)[Kremote: Counting objects:  57% (37/64)[Kremote: Counting objects:  59% (38/64)[Kremote: Counting objects:  60% (39/64)[Kremote: Counting objects:  62% (40/64)[Kremote: Counting objects:  64% (41/64)[Kremote: Counting objects:  65% (42/64)[Kremote: Counting objects:  67% (43/64)[Kremote: Counting objects:  68% (44/64)[Kremote: Counting objects:  70% (45/64)[Kremote: Counting objects:  71% (46/64)[Kremote: Counting objects:  73% (47/64)[Kremote: Counting objects:  75% (48/64)[Kremote: Counting objects:  76% (49/64)[Kremote: Counting objects:  78% (50/64)[Kremote: Counting objects:  79% (51/64)[Kremote: Counting objects:  81% (52/64)[Kremote: Counting objects:  82% (53/64)[Kremote: Counting objects:  84% (54/64)remote: Counting objects:  85% (55/64)[Kremote: Counting objects:  87% (56/64)[Kremote: Counting objects:  89% (57/64)[Kremote: Counting objects:  90% (58/64)[Kremote: Counting objects:  92% (59/64)[Kremote: Counting objects:  93% (60/64)[Kremote: Counting objects:  95% (61/64)[Kremote: Counting objects:  96% (62/64)[Kremote: Counting objects:  98% (63/64)[Kremote: Counting objects: 100% (64/64)[Kremote: Counting objects: 100% (64/64), done.[K
+remote: Compressing objects:   3% (1/31)[Kremote: Compressing objects:   6% (2/31)[Kremote: Compressing objects:   9% (3/31)[Kremote: Compressing objects:  12% (4/31)[Kremote: Compressing objects:  16% (5/31)[Kremote: Compressing objects:  19% (6/31)[Kremote: Compressing objects:  22% (7/31)[Kremote: Compressing objects:  25% (8/31)[Kremote: Compressing objects:  29% (9/31)[Kremote: Compressing objects:  32% (10/31)[Kremote: Compressing objects:  35% (11/31)[Kremote: Compressing objects:  38% (12/31)[Kremote: Compressing objects:  41% (13/31)[Kremote: Compressing objects:  45% (14/31)[Kremote: Compressing objects:  48% (15/31)[Kremote: Compressing objects:  51% (16/31)[Kremote: Compressing objects:  54% (17/31)[Kremote: Compressing objects:  58% (18/31)[Kremote: Compressing objects:  61% (19/31)[Kremote: Compressing objects:  64% (20/31)[Kremote: Compressing objects:  67% (21/31)[Kremote: Compressing objects:  70% (22/31)[Kremote: Compressing objects:  74% (23/31)[Kremote: Compressing objects:  77% (24/31)[Kremote: Compressing objects:  80% (25/31)[Kremote: Compressing objects:  83% (26/31)[Kremote: Compressing objects:  87% (27/31)[Kremote: Compressing objects:  90% (28/31)[Kremote: Compressing objects:  93% (29/31)[Kremote: Compressing objects:  96% (30/31)[Kremote: Compressing objects: 100% (31/31)[Kremote: Compressing objects: 100% (31/31), done.[K
+remote: Total 64 (delta 10), reused 60 (delta 6), pack-reused 0[K
+Receiving objects:   1% (1/64)Receiving objects:   3% (2/64)Receiving objects:   4% (3/64)Receiving objects:   6% (4/64)Receiving objects:   7% (5/64)Receiving objects:   9% (6/64)Receiving objects:  10% (7/64)Receiving objects:  12% (8/64)Receiving objects:  14% (9/64)Receiving objects:  15% (10/64)Receiving objects:  17% (11/64)Receiving objects:  18% (12/64)Receiving objects:  20% (13/64)Receiving objects:  21% (14/64)Receiving objects:  23% (15/64)Receiving objects:  25% (16/64)Receiving objects:  26% (17/64)Receiving objects:  28% (18/64)Receiving objects:  29% (19/64)Receiving objects:  31% (20/64)Receiving objects:  32% (21/64)Receiving objects:  34% (22/64)Receiving objects:  35% (23/64)Receiving objects:  37% (24/64)Receiving objects:  39% (25/64)Receiving objects:  40% (26/64)Receiving objects:  42% (27/64)Receiving objects:  43% (28/64)Receiving objects:  45% (29/64)Receiving objects:  46% (30/64)Receiving objects:  48% (31/64)Receiving objects:  50% (32/64)Receiving objects:  51% (33/64)Receiving objects:  53% (34/64)Receiving objects:  54% (35/64)Receiving objects:  56% (36/64)Receiving objects:  57% (37/64)Receiving objects:  59% (38/64)Receiving objects:  60% (39/64)Receiving objects:  62% (40/64)Receiving objects:  64% (41/64)Receiving objects:  65% (42/64)Receiving objects:  67% (43/64)Receiving objects:  68% (44/64)Receiving objects:  70% (45/64)Receiving objects:  71% (46/64)Receiving objects:  73% (47/64)Receiving objects:  75% (48/64)Receiving objects:  76% (49/64)Receiving objects:  78% (50/64)Receiving objects:  79% (51/64)Receiving objects:  81% (52/64)Receiving objects:  82% (53/64)Receiving objects:  84% (54/64)Receiving objects:  85% (55/64)Receiving objects:  87% (56/64)Receiving objects:  89% (57/64)Receiving objects:  90% (58/64)Receiving objects:  92% (59/64)Receiving objects:  93% (60/64)Receiving objects:  95% (61/64)Receiving objects:  96% (62/64)Receiving objects:  98% (63/64)Receiving objects: 100% (64/64)Receiving objects: 100% (64/64), 8.16 KiB | 8.16 MiB/s, done.
+Resolving deltas:   0% (0/10)Resolving deltas:  30% (3/10)Resolving deltas:  50% (5/10)Resolving deltas:  60% (6/10)Resolving deltas:  70% (7/10)Resolving deltas:  80% (8/10)Resolving deltas: 100% (10/10)Resolving deltas: 100% (10/10), done.
+travis_time:end:25e83474:start=1601828752966666792,finish=1601828753368569524,duration=401902732,event=checkout[0K$ cd egindri/triangle-classifier
+$ git checkout -qf 7197fd797f32b494c20fc8a1805eb00ced9f65c6
+travis_fold:end:git.checkout[0K
+travis_time:end:25e83474:start=1601828752966666792,finish=1601828753375809957,duration=409143165,event=checkout[0Ktravis_time:start:04004160[0Ktravis_time:end:04004160:start=1601828753379155066,finish=1601828753385507667,duration=6352601,event=env[0K$ java -Xmx32m -version
+openjdk version "11.0.2" 2019-01-15
+OpenJDK Runtime Environment 18.9 (build 11.0.2+9)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode)
+$ javac -J-Xmx32m -version
+javac 11.0.2
+travis_fold:start:install[0Ktravis_time:start:0f92e614[0K$ mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /usr/local/maven-3.6.3
+Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/local/lib/jvm/openjdk11
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-1077-gcp", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for pucrs.qp:triangle-classifier:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 39, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< pucrs.qp:triangle-classifier >--------------------
+[INFO] Building triangle-classifier 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom (8.1 kB at 17 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom (9.2 kB at 249 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/22/maven-parent-22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/22/maven-parent-22.pom (30 kB at 725 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/11/apache-11.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/11/apache-11.pom (15 kB at 592 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar (30 kB at 447 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom (10 kB at 681 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom (11 kB at 300 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom (33 kB at 1.7 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/13/apache-13.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/13/apache-13.pom (14 kB at 873 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar (43 kB at 934 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom (10 kB at 299 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire/2.12.4/surefire-2.12.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire/2.12.4/surefire-2.12.4.pom (14 kB at 657 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.jar (30 kB at 870 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom (5.8 kB at 208 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom (13 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom (26 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/10/apache-10.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/10/apache-10.pom (15 kB at 822 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.jar (34 kB at 1.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom (6.4 kB at 532 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar (27 kB at 1.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.pom (3.2 kB at 355 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/junit-bom/5.7.0/junit-bom-5.7.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/junit-bom/5.7.0/junit-bom-5.7.0.pom (5.1 kB at 425 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.pom (3.2 kB at 151 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.pom (1.2 kB at 65 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom (1.7 kB at 80 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.pom (2.8 kB at 105 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.pom (3.0 kB at 188 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.pom (3.2 kB at 128 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.pom (3.2 kB at 246 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/mockito/mockito-core/3.5.13/mockito-core-3.5.13.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/mockito/mockito-core/3.5.13/mockito-core-3.5.13.pom (25 kB at 575 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy/1.10.15/byte-buddy-1.10.15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy/1.10.15/byte-buddy-1.10.15.pom (11 kB at 172 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy-parent/1.10.15/byte-buddy-parent-1.10.15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy-parent/1.10.15/byte-buddy-parent-1.10.15.pom (40 kB at 941 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy-agent/1.10.15/byte-buddy-agent-1.10.15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy-agent/1.10.15/byte-buddy-agent-1.10.15.pom (9.6 kB at 184 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/objenesis/objenesis/3.1/objenesis-3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/objenesis/objenesis/3.1/objenesis-3.1.pom (3.5 kB at 196 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/objenesis/objenesis-parent/3.1/objenesis-parent-3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/objenesis/objenesis-parent/3.1/objenesis-parent-3.1.pom (18 kB at 2.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar (7.7 kB at 125 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar (2.4 kB at 22 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar (6.4 kB at 43 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar (175 kB at 727 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/mockito/mockito-core/3.5.13/mockito-core-3.5.13.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar (212 kB at 905 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy/1.10.15/byte-buddy-1.10.15.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar (181 kB at 693 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar (100 kB at 371 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy-agent/1.10.15/byte-buddy-agent-1.10.15.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/objenesis/objenesis/3.1/objenesis-3.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/objenesis/objenesis/3.1/objenesis-3.1.jar (60 kB at 190 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar (567 kB at 1.7 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy-agent/1.10.15/byte-buddy-agent-1.10.15.jar (259 kB at 661 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/mockito/mockito-core/3.5.13/mockito-core-3.5.13.jar (672 kB at 1.6 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/net/bytebuddy/byte-buddy/1.10.15/byte-buddy-1.10.15.jar (3.5 MB at 6.7 MB/s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ triangle-classifier ---
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom (1.5 kB at 32 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom (9.0 kB at 503 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom (15 kB at 846 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/3/apache-3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/3/apache-3.pom (3.4 kB at 490 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom (2.6 kB at 377 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom (2.0 kB at 91 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom (3.0 kB at 435 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom (1.9 kB at 239 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom (9.0 kB at 1.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom (3.9 kB at 494 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom (492 B at 41 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom (5.7 kB at 382 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/junit/junit/3.8.1/junit-3.8.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/junit/junit/3.8.1/junit-3.8.1.pom (998 B at 59 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom (6.9 kB at 857 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom (3.1 kB at 348 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom (2.0 kB at 198 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom (2.6 kB at 291 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom (1.9 kB at 264 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom (1.6 kB at 263 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom (1.9 kB at 216 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom (6.7 kB at 839 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom (1.9 kB at 239 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom (1.8 kB at 135 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom (1.4 kB at 180 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom (424 B at 61 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom (3.9 kB at 391 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom (1.7 kB at 213 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.pom (2.1 kB at 301 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom (2.0 kB at 252 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom (7.1 kB at 886 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom (1.3 kB at 179 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/classworlds/classworlds/1.1/classworlds-1.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/classworlds/classworlds/1.1/classworlds-1.1.pom (3.3 kB at 554 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom (3.3 kB at 556 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom (17 kB at 2.4 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom (5.8 kB at 526 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom (8.7 kB at 235 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom (6.8 kB at 978 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom (12 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom (889 B at 49 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom (5.8 kB at 974 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom (2.9 kB at 409 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom (3.0 kB at 431 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom (5.0 kB at 419 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom (8.1 kB at 806 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom (890 B at 68 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom (2.8 kB at 407 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom (15 kB at 2.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 kB at 1.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar (116 kB at 4.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar (152 kB at 4.7 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar (35 kB at 766 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar (57 kB at 1.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar (5.9 kB at 116 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar (29 kB at 526 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar (9.9 kB at 168 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar (21 kB at 358 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar (24 kB at 429 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/classworlds/classworlds/1.1/classworlds-1.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar (13 kB at 179 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar (14 kB at 172 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/classworlds/classworlds/1.1/classworlds-1.1.jar (38 kB at 485 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar (37 kB at 479 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.jar (30 kB at 396 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar (10 kB at 92 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar (49 kB at 423 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar (87 kB at 760 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar (86 kB at 691 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/junit/junit/3.8.1/junit-3.8.1.jar (121 kB at 841 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar (194 kB at 1.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar (6.8 kB at 45 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar (43 kB at 285 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar (223 kB at 1.4 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar (61 kB at 372 kB/s)
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/egindri/triangle-classifier/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ triangle-classifier ---
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom (1.5 kB at 213 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven/2.0.9/maven-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven/2.0.9/maven-2.0.9.pom (19 kB at 2.7 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/8/maven-parent-8.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/8/maven-parent-8.pom (24 kB at 1.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/4/apache-4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/4/apache-4.pom (4.5 kB at 300 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom (1.6 kB at 125 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom (2.3 kB at 115 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom (7.8 kB at 410 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom (2.1 kB at 94 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom (3.1 kB at 349 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom (2.0 kB at 116 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom (2.0 kB at 228 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom (1.9 kB at 127 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom (1.7 kB at 194 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom (2.7 kB at 452 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom (2.7 kB at 386 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom (2.0 kB at 394 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom (2.1 kB at 415 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom (1.3 kB at 184 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom (3.4 kB at 379 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom (4.0 kB at 270 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom (4.9 kB at 705 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom (965 B at 193 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom (4.7 kB at 339 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom (6.4 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom (1.5 kB at 243 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven/2.2.1/maven-2.2.1.pom (22 kB at 3.7 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/11/maven-parent-11.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/11/maven-parent-11.pom (32 kB at 4.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/5/apache-5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/5/apache-5.pom (4.1 kB at 241 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom (12 kB at 582 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom (2.2 kB at 91 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom (3.2 kB at 540 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom (889 B at 178 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom (2.0 kB at 391 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom (1.9 kB at 127 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom (7.9 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom (3.0 kB at 373 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom (2.2 kB at 310 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom (2.2 kB at 310 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom (1.6 kB at 198 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom (1.9 kB at 144 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom (1.7 kB at 107 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom (2.8 kB at 185 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom (3.1 kB at 259 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom (880 B at 68 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom (1.9 kB at 241 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom (2.1 kB at 229 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom (1.3 kB at 157 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3.0 kB at 423 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (6.8 kB at 971 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (8.4 kB at 933 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom (5.1 kB at 858 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (2.1 kB at 159 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom (815 B at 58 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom (4.2 kB at 303 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom (17 kB at 1.4 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom (865 B at 30 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom (3.6 kB at 181 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom (3.1 kB at 511 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom (20 kB at 3.4 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (6.8 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 kB at 1.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom (3.1 kB at 524 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom (19 kB at 3.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom (690 B at 63 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom (769 B at 55 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom (1.2 kB at 78 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom (2.8 kB at 81 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom (2.3 kB at 126 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom (4.0 kB at 168 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom (2.8 kB at 112 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/xbean/xbean/3.4/xbean-3.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/xbean/xbean/3.4/xbean-3.4.pom (19 kB at 806 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom (145 B at 29 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom (5.3 kB at 178 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom (2.5 kB at 80 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/google/1/google-1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/google/1/google-1.pom (1.6 kB at 259 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/junit/junit/3.8.2/junit-3.8.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/junit/junit/3.8.2/junit-3.8.2.pom (747 B at 36 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.jar (13 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar (21 kB at 1.2 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar (160 kB at 4.2 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar (89 kB at 1.6 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar (211 kB at 4.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar (49 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar (14 kB at 270 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar (25 kB at 351 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar (87 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar (122 kB at 1.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar (35 kB at 453 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar (10 kB at 108 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar (29 kB at 316 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar (37 kB at 349 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar (58 kB at 526 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar (33 kB at 284 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar (32 kB at 257 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar (155 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 kB at 102 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar (4.2 kB at 29 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar (4.6 kB at 30 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar (25 kB at 159 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar (19 kB at 119 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/log4j/log4j/1.2.12/log4j-1.2.12.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar (45 kB at 261 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar (46 kB at 250 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/junit/junit/3.8.2/junit-3.8.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar (134 kB at 679 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar (217 kB at 1.1 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/log4j/log4j/1.2.12/log4j-1.2.12.jar (358 kB at 1.8 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/junit/junit/3.8.2/junit-3.8.2.jar (121 kB at 561 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.jar (640 kB at 2.8 MB/s)
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/travis/build/egindri/triangle-classifier/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ triangle-classifier ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/egindri/triangle-classifier/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ triangle-classifier ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/travis/build/egindri/triangle-classifier/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ triangle-classifier ---
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.pom (3.0 kB at 303 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.pom (2.5 kB at 415 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.pom (5.5 kB at 553 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.pom (1.6 kB at 271 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.1/maven-plugin-tools-3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.1/maven-plugin-tools-3.1.pom (16 kB at 2.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.pom (1.8 kB at 300 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting/2.0.9/maven-reporting-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting/2.0.9/maven-reporting-2.0.9.pom (1.5 kB at 246 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom (3.5 kB at 579 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 kB at 2.4 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom (42 kB at 3.8 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/9/apache-9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/9/apache-9.pom (15 kB at 2.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom (3.7 kB at 617 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom (9.3 kB at 1.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom (23 kB at 3.8 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/6/apache-6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/apache/6/apache-6.pom (13 kB at 2.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom (1.2 kB at 124 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar (118 kB at 3.8 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.jar (35 kB at 1.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar (10 kB at 253 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.jar (263 kB at 4.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar (232 kB at 4.2 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar (38 kB at 622 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.jar (14 kB at 223 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar (31 kB at 471 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (316 kB at 4.4 MB/s)
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ triangle-classifier ---
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom (4.5 kB at 648 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom (2.8 kB at 351 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4.1 kB at 813 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom (8.4 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (8.4 kB at 643 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom (1.7 kB at 83 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom (2.7 kB at 135 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom (19 kB at 931 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom (1.0 kB at 73 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom (9.9 kB at 496 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar (38 kB at 1.7 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar (22 kB at 682 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.jar (60 kB at 1.3 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar (208 kB at 6.7 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar (184 kB at 4.6 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar (58 kB at 1.1 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (226 kB at 4.2 MB/s)
+[INFO] Building jar: /home/travis/build/egindri/triangle-classifier/target/triangle-classifier-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ triangle-classifier ---
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom (2.5 kB at 419 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom (19 kB at 2.7 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom (1.1 kB at 176 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom (5.0 kB at 829 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom (7.2 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom (7.3 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar (12 kB at 565 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar (230 kB at 8.5 MB/s)
+[INFO] Installing /home/travis/build/egindri/triangle-classifier/target/triangle-classifier-0.0.1-SNAPSHOT.jar to /home/travis/.m2/repository/pucrs/qp/triangle-classifier/0.0.1-SNAPSHOT/triangle-classifier-0.0.1-SNAPSHOT.jar
+[INFO] Installing /home/travis/build/egindri/triangle-classifier/pom.xml to /home/travis/.m2/repository/pucrs/qp/triangle-classifier/0.0.1-SNAPSHOT/triangle-classifier-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.456 s
+[INFO] Finished at: 2020-10-04T16:26:05Z
+[INFO] ------------------------------------------------------------------------
+travis_time:end:0f92e614:start=1601828753905160814,finish=1601828765459928548,duration=11554767734,event=install[0Ktravis_fold:end:install[0Ktravis_time:start:09d0a0ac[0K$ mvn test -B
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for pucrs.qp:triangle-classifier:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 39, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< pucrs.qp:triangle-classifier >--------------------
+[INFO] Building triangle-classifier 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ triangle-classifier ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/egindri/triangle-classifier/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ triangle-classifier ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ triangle-classifier ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/travis/build/egindri/triangle-classifier/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ triangle-classifier ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ triangle-classifier ---
+[INFO] Surefire report directory: /home/travis/build/egindri/triangle-classifier/target/surefire-reports
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom (1.7 kB at 5.4 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (2.3 kB at 78 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar (26 kB at 341 kB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pucrs.qp.triangle.TriangleTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+
+Results :
+
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.982 s
+[INFO] Finished at: 2020-10-04T16:26:10Z
+[INFO] ------------------------------------------------------------------------
+travis_time:end:09d0a0ac:start=1601828765463832395,finish=1601828770185098247,duration=4721265852,event=[0K[32;1mThe command "mvn test -B" exited with 0.[0m
+
+
+Done. Your build exited with 0.

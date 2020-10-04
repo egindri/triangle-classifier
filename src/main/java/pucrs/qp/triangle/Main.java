@@ -11,7 +11,9 @@ public class Main {
 		TriangleClassification triangleClassification = null;
 		
 		try (Scanner input = new Scanner(System.in)) {
-			triangleClassification = TriangleClassifier.classify(input.nextDouble(), input.nextDouble(), input.nextDouble());
+			Triangle triangle = new Triangle(input.nextDouble(), input.nextDouble(), input.nextDouble());
+			triangle.classify();
+			triangleClassification = triangle.getClassification();
 		} catch (InvalidTriangleException e) {
 			System.out.println("NAO FORMA TRIANGULO");
 			return;

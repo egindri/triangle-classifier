@@ -1,8 +1,5 @@
 package pucrs.qp.triangle;
 
-import java.util.Arrays;
-import java.util.List;
-
 public enum TriangleSideType {
 	
 	EQUILATERAL(1),
@@ -17,9 +14,8 @@ public enum TriangleSideType {
 		this.numberOfDifferentSides = numberOfDifferentSides;
 	}
 
-	
-	public static TriangleSideType resolve(List<Double> sides) {
-		Long numberOfDifferentSides = sides.stream().distinct().count();
-		return Arrays.stream(TriangleSideType.values()).filter(t -> t.numberOfDifferentSides == numberOfDifferentSides).findAny().get();
+
+	public int getNumberOfDifferentSides() {
+		return numberOfDifferentSides;
 	}
 }
